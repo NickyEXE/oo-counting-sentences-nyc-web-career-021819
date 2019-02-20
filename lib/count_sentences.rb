@@ -16,12 +16,13 @@ class String
   end
 
   def count_sentences
-    array =self.split.map do |string|
+    array = self.split.map do |string|
       if string.include?("?") || string.include?(".") || string.include?("!")
         1
       else
         0
       end
     end
+    binding.pry
   end
 end
