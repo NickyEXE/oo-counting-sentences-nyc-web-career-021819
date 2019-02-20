@@ -24,4 +24,6 @@ class String
       end
     end
   end
+  
+  puts count_sentences
 end
