@@ -16,7 +16,7 @@ class String
   end
 
   def count_sentences
-    array = self.split.select do |string|
+    self.split.select do |string|
       string.include?("?") || string.include?(".") || string.include?("!")
     end.length
   end
