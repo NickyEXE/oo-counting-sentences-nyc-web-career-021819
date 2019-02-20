@@ -22,8 +22,7 @@ class String
       else
         0
       end
+      binding.pry
     end
   end
-  
-  puts count_sentences
 end
