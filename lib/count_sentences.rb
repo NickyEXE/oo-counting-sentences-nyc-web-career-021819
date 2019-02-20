@@ -17,11 +17,7 @@ class String
 
   def count_sentences
     array = self.split.select do |string|
-      if string.include?("?") || string.include?(".") || string.include?("!")
-        1
-      else
-        0
-      end
+      string.include?("?") || string.include?(".") || string.include?("!")
     end
     binding.pry
   end
