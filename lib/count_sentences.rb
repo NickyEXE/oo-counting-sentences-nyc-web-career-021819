@@ -21,7 +21,7 @@ class String
         1
       else
         0
-      end.inject(0){|sum,x| sum + x }
+      end.inject{|sum,x| sum + x }
     end
   end
 end
