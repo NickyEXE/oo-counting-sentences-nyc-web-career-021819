@@ -15,7 +15,7 @@ class String
 
   end
 
-def count_sentences
+  def count_sentences
     self.split.map do |string|
       if string.include?("?") || string.include?(".") || string.include?("!")
         1
