@@ -15,13 +15,13 @@ class String
 
   end
 
-  def count_sentences
-    i=0
-    self.split.each do |string|
+def count_sentences
+    self.split.map do |string|
       if string.include?("?") || string.include?(".") || string.include?("!")
-        i+=1
-      end
+        1
+      else
+        0
+      end.array.inject(0){|sum,x| sum + x }
     end
-    i
   end
 end
